@@ -25,11 +25,11 @@ const Form = ({ email, dispatch, submitHandler }) => {
                     </li>
                     <li className="list-item">
                         <img src={iconList} alt="icon" className="icon" />
-                        <p>Product discovery and building what matters</p>
+                        <p>Measuring to ensure updates are a success</p>
                     </li>
                     <li className="list-item">
                         <img src={iconList} alt="icon" className="icon" />
-                        <p>Product discovery and building what matters</p>
+                        <p>And much more!</p>
                     </li>
                 </ul>
                 <form onSubmit={submitHandler} action="">
@@ -61,44 +61,44 @@ const Form = ({ email, dispatch, submitHandler }) => {
 const Wrapper = styled.div`
     display: flex;
     height: 80vh;
-    width: 60vw;
+    width: 70vw;
     margin: 10vh auto;
-    padding: 20px;
+    padding: 1.25rem;
 
     .form {
         width: 60%;
-        padding: 40px;
+        padding: 2.5rem;
         overflow: auto;
     }
     .list {
         list-style: none;
         display: flex;
         flex-direction: column;
-        gap: 10px;
-        margin-top: 16px;
-        margin-bottom: 24px;
+        gap: 0.625rem;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
     }
     .list-item {
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 1.25rem;
     }
     .icon {
-        width: 24px;
+        width: 1.5rem;
     }
     .form-control {
-        margin-bottom: 16px;
+        margin-bottom: 1rem;
     }
     label {
         color: var(--dark-slate);
         font-weight: 700;
-        fonts-size: 14px;
-        margin-bottom: 8px;
+        fonts-size: 0.875rem;
+        margin-bottom: 0.5rem;
         display: inline-block;
     }
     input {
-        padding: 10px;
-        border-radius: 8px;
+        padding: 1rem 0.75rem;
+        border-radius: 0.5rem;
         border: 1px solid var(--grey);
         width: 100%;
     }
@@ -121,7 +121,7 @@ const Wrapper = styled.div`
         display: block;
         position: absolute;
         right: 0;
-        font-size: 12px;
+        font-size: 0.75rem;
     }
     .error input {
         background-color: var(--tomato-light);
@@ -133,7 +133,7 @@ const Wrapper = styled.div`
     }
     .image {
         width: 40%;
-        border-radius: 10px;
+        border-radius: 0.625rem;
         overflow: hidden;
     }
     .bg-img {
@@ -146,21 +146,21 @@ const Wrapper = styled.div`
     }
 
     @media only screen and (max-width: 1000px) {
-        width: 90vw;
+        width: 80vw;
         margin: 10vh auto;
-        padding: 20px;
+        padding: 1.25rem;
         .form {
-            padding: 30px 20px;
+            padding: 1.875rem 1.25rem;
         }
     }
     @media only screen and (max-width: 600px) {
         flex-direction: column-reverse;
         height: auto;
         min-height: 100vh;
-        width: 100vw;
+        width: 100%;
         margin: auto;
         padding: 0;
-        padding-bottom: 20px;
+        padding-bottom: 1.25rem;
         .form {
             width: 100%;
             overflow: hidden;
@@ -169,20 +169,20 @@ const Wrapper = styled.div`
             list-style: none;
             display: flex;
             flex-direction: column;
-            gap: 10px;
-            margin-top: 16px;
-            margin-bottom: 24px;
+            gap: 0.625rem;
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
         }
         .list-item {
             display: flex;
             align-items: center;
-            gap: 20px;
+            gap: 1.25rem;
         }
 
         .image {
-            width: 100vw;
+            width: 100%;
             height: 40vh;
-            border-radius: 0 0 20px 20px;
+            border-radius: 0 0 1.25rem 1.25rem;
         }
         .bg-img {
             display: none;
