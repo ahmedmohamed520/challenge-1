@@ -15,7 +15,7 @@ const Form = ({ email, dispatch, submitHandler }) => {
 
     return (
         <Wrapper className="container">
-            <div className="form">
+            <div className="form-component">
                 <h1>Stay updated!</h1>
                 <p>Join 60,000+ product managers receiving monthly updates on: </p>
                 <ul className="list">
@@ -65,7 +65,7 @@ const Wrapper = styled.div`
     margin: 10vh auto;
     padding: 1.25rem;
 
-    .form {
+    .form-component {
         width: 60%;
         padding: 2.5rem;
         overflow: auto;
@@ -149,7 +149,7 @@ const Wrapper = styled.div`
         width: 80vw;
         margin: 10vh auto;
         padding: 1.25rem;
-        .form {
+        .form-compoenent {
             padding: 1.875rem 1.25rem;
         }
     }
@@ -161,7 +161,7 @@ const Wrapper = styled.div`
         margin: auto;
         padding: 0;
         padding-bottom: 1.25rem;
-        .form {
+        .form-component {
             width: 100%;
             overflow: hidden;
         }
